@@ -38,7 +38,7 @@ export const mediaSections = [
     description:
       "Bonus rapides, récompenses d'équipe, pools mondiaux, et bien plus. OlyLife est conçu pour s'adapter à votre mode de vie, que vous vous investissiez à plein temps ou que vous construisiez un revenu complémentaire.",
     thumb: THUMB_IMAGE,
-    videoId: "R6MlUcmOul8",
+    videoUrl: "/videos/earn.mp4",
     dark: true,
   },
 ];
