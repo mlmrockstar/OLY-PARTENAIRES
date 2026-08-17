@@ -153,3 +153,40 @@ body {
 ::selection {
     background: rgba(124, 193, 66, 0.4);
 }
+
+/* Scroll reveal */
+.oly-reveal {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+.oly-reveal--in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Play button pulse ring */
+.oly-play {
+    position: relative;
+}
+.oly-play::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.55);
+    animation: oly-pulse 2.2s ease-out infinite;
+}
+@keyframes oly-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.45);
+    }
+    70% {
+        box-shadow: 0 0 0 22px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}

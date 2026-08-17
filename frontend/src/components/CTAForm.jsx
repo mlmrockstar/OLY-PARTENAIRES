@@ -1,9 +1,11 @@
 import React from "react";
 import RegistrationForm from "./RegistrationForm";
+import Reveal from "./Reveal";
 
 const CTAForm = () => {
   return (
-    <section className="oly-container">
+    <section className="oly-container" id="inscription">
+      <Reveal>
       <div className="oly-card oly-card--dark px-6 py-14 md:px-14 md:py-16">
         <h2 className="oly-heading text-center text-white">Prêt à Passer à l'Action ?</h2>
         <p className="oly-sub mx-auto mt-5 max-w-2xl text-center text-white/70">
@@ -18,6 +20,7 @@ const CTAForm = () => {
           <RegistrationForm />
         </div>
       </div>
+      </Reveal>
     </section>
   );
 };
