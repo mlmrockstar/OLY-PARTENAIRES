@@ -5,7 +5,7 @@ import VideoModal from "./VideoModal";
 
 const MediaSection = ({ section }) => {
   const [open, setOpen] = useState(false);
-  const { title, description, thumb, videoId } = section;
+  const { title, description, thumb, videoId, videoUrl } = section;
 
   return (
     <section className="oly-container">
@@ -47,7 +47,7 @@ const MediaSection = ({ section }) => {
         </button>
       </div>
 
-      <VideoModal open={open} onOpenChange={setOpen} videoId={videoId} />
+      <VideoModal open={open} onOpenChange={setOpen} videoId={videoId} videoUrl={videoUrl} />
     </section>
   );
 };

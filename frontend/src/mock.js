@@ -20,7 +20,7 @@ export const mediaSections = [
     description:
       "Notre innovation phare en matière de bien-être, la technologie PEMF (Champ Électromagnétique Pulsé), transforme la façon dont les gens prennent soin de leur santé. Découvrez comment elle fonctionne et pourquoi elle est au cœur de notre vision d'un bien-être durable.",
     thumb: THUMB_IMAGE,
-    videoId: "aqz-KE-bpKQ",
+    videoUrl: "/videos/pemf.mp4",
     dark: true,
   },
   {
@@ -29,7 +29,7 @@ export const mediaSections = [
     description:
       "Découvrez comment les appareils de bien-être de pointe d'OlyLife s'intègrent parfaitement à votre mode de vie, vous aidant à vous sentir mieux, à récupérer plus vite et à vivre plus librement.",
     thumb: THUMB_IMAGE,
-    videoId: "1La4QzGeaaQ",
+    videoUrl: "/videos/wellness.mp4",
     dark: true,
   },
   {
