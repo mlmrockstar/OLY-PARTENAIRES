@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #05130a;
+}
+
+@layer base {
+  :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    }
+}
+
+/* ---- OlyNation clone styles ---- */
+.font-heading {
+    font-family: "Poppins", sans-serif;
+}
+
+.oly-app {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.oly-bg {
+    position: fixed;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.oly-bg-overlay {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+            120% 90% at 50% 20%,
+            rgba(5, 20, 10, 0.35) 0%,
+            rgba(4, 15, 8, 0.7) 60%,
+            rgba(2, 10, 5, 0.9) 100%
+        );
+    z-index: 1;
+}
+
+.oly-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.oly-card {
+    border-radius: 34px;
+    position: relative;
+    box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.7);
+}
+
+/* Bright green hero / product-title card */
+.oly-card--green {
+    background: radial-gradient(
+        120% 130% at 50% 105%,
+        #8ccb46 0%,
+        #4fa128 42%,
+        #2f7a1c 100%
+    );
+    border: 1px solid rgba(180, 235, 130, 0.55);
+}
+
+/* Dark translucent green card */
+.oly-card--dark {
+    background: linear-gradient(
+        180deg,
+        rgba(12, 40, 18, 0.9) 0%,
+        rgba(6, 22, 10, 0.92) 100%
+    );
+    border: 1px solid rgba(120, 200, 90, 0.22);
+}
+
+.oly-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.oly-sub {
+    font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* Submit button - green two-tone gradient */
+.oly-submit {
+    background: linear-gradient(180deg, #58c235 0%, #3d9c24 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 14px 56px;
+    border-radius: 12px;
+    border: 1px solid rgba(180, 235, 130, 0.5);
+    box-shadow: 0 12px 30px -10px rgba(70, 170, 40, 0.7);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    cursor: pointer;
+}
+.oly-submit:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 16px 36px -10px rgba(70, 170, 40, 0.85);
+}
+
+/* number input arrows tidy */
+.oly-form-inner input[type="number"]::-webkit-outer-spin-button,
+.oly-form-inner input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::selection {
+    background: rgba(124, 193, 66, 0.4);
+}
