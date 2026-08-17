@@ -34,9 +34,9 @@ export const mediaSections = [
   },
   {
     id: "earn",
-    title: ["Un Seul Abonnement.", "Six Façons de Gagner."],
+    title: ["Un seul achat,", "six façons de gagner"],
     description:
-      "Bonus rapides, récompenses d'équipe, pools mondiaux, et bien plus. OlyLife est conçu pour s'adapter à votre mode de vie, que vous vous investissiez à plein temps ou que vous construisiez un revenu complémentaire.",
+      "Un seul achat, pas d'achat automatique. Bonus rapides, récompenses d'équipe, pools mondiaux, et bien plus. OlyLife est conçu pour s'adapter à votre mode de vie, que vous vous investissiez à plein temps ou que vous construisiez un revenu complémentaire.",
     thumb: "/videos/earn.jpg",
     videoUrl: "/videos/earn.mp4",
     dark: true,
